@@ -60,17 +60,37 @@ Se definió un indicador de riesgo basado en el ratio deuda/ventas.
 
 ---
 
-## 🔍 Análisis exploratorio
+## 🔍 Análisis Exploratorio
 
-### 📊 Distribución del ratio
+### 📊 Distribución del ratio (problema)
 
-![Ratio](images/python/ratio.png)
+![Ratio original](images/python/ratio.png)
 
-📌 Distribución altamente sesgada con presencia de outliers.
+📌 **Hallazgo:**
+Distribución altamente sesgada con presencia de valores extremos que dificultan la interpretación.
 
 ---
 
-### 📊 Distribución del riesgo
+## 🔧 Tratamiento de outliers
+
+Para mejorar la calidad del análisis, se aplicó un recorte de valores extremos:
+
+* uso del percentil 99
+* reducción del impacto de outliers
+* tranformas a logaritmos par tenr una mejor visualización
+
+📌 **Resultado:**
+Se obtuvo una distribución más representativa del comportamiento real de los datos.
+
+---
+
+### 📊 Distribución del ratio (ajustada)
+
+![Ratio limpio](images/python/ratio_limpio.png)
+
+---
+
+## 📊 Distribución del riesgo
 
 ![Target](images/python/target.png)
 
@@ -106,14 +126,17 @@ Se definió un indicador de riesgo basado en el ratio deuda/ventas.
 
 * El modelo sin balanceo ignora clases minoritarias
 * SMOTE mejora significativamente el recall
-* Mejor equilibrio en la clasificación
+* El tratamiento de outliers mejora la interpretabilidad del ratio
 
 ---
 
 # 🎯 Conclusión
 
-El proyecto demuestra la importancia del balanceo de clases en modelos de clasificación y el impacto de los outliers en variables financieras.
+El proyecto demuestra la importancia de:
+
+* tratar valores extremos en datos financieros
+* aplicar técnicas de balanceo en modelos de clasificación
+* integrar SQL y Python en un flujo completo de análisis
 
 ---
-
 
