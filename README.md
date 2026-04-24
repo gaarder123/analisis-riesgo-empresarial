@@ -111,6 +111,11 @@ Se obtuvo una distribución más representativa del comportamiento real de los d
 
 # 🤖 Modelado
 
+Se realizo el modelo sin balanceo y con balanceo :
+
+
+![balanceo](images/python/balanceo.png)
+
 ---
 
 ## 🔴 Modelo sin balanceo
