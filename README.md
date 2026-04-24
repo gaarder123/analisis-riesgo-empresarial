@@ -99,6 +99,14 @@ Se obtuvo una distribución más representativa del comportamiento real de los d
 📌 Dataset con desbalance moderado entre clases.
 
 ---
+## 📊 Riesgo por Tamaño de Empresa
+
+![empresa](images/python/empresa.png)
+---
+## 📊 Riesgo por Sector
+
+![empresa_s](images/python/empresa_s.png)
+---
 
 # 🤖 Modelado
 
