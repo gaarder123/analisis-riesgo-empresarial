@@ -54,6 +54,8 @@ Se identificaron patrones clave a nivel agregado:
 
 Se definió un indicador de riesgo basado en el ratio deuda/ventas.
 
+![target](images/sql/target.png)
+
 ---
 
 # 🐍 Python – Análisis y modelado
@@ -92,7 +94,7 @@ Se obtuvo una distribución más representativa del comportamiento real de los d
 
 ## 📊 Distribución del riesgo
 
-![Target](images/python/target.png)
+![Target](images/python/target_1.png)
 
 📌 Dataset con desbalance moderado entre clases.
 
@@ -107,12 +109,17 @@ Se obtuvo una distribución más representativa del comportamiento real de los d
 * Sesgo hacia clases mayoritarias
 * No detecta correctamente la clase minoritaria
 
+
+![sin_b](images/python/sin_b.png)
+
 ---
 
 ## 🟢 Modelo con SMOTE (balanceo real)
 
 * Mejora la detección de "RIESGO MODERADO"
 * Mayor equilibrio entre clases
+
+![con_b](images/python/con_b.png)
 
 ---
 
