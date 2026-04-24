@@ -90,6 +90,7 @@ Se obtuvo una distribución más representativa del comportamiento real de los d
 
 ![Ratio limpio](images/python/ratio_limpio.png)
 
+
 ---
 
 ## 📊 Distribución del riesgo
